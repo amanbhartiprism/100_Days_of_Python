@@ -86,9 +86,9 @@
 
 # ! Final Project of the today
 
-print("Welcome to the tip calculator!")
-total_bill = float(input("What was the total bill? $\n"))
-tip = float(input("How much tip would you like to give? 10, 12 or 15\n"))
-no_of_persons = int(input("How many people to split the bill?\n"))
-bill_calculated = (total_bill + ((tip * total_bill) / 100 )) / no_of_persons
-print(round(bill_calculated,2))
+# print("Welcome to the tip calculator!")
+# total_bill = float(input("What was the total bill? $\n"))
+# tip = float(input("How much tip would you like to give? 10, 12 or 15\n"))
+# no_of_persons = int(input("How many people to split the bill?\n"))
+# bill_calculated = round(((total_bill + ((tip * total_bill) / 100 )) / no_of_persons), 2)
+# print(f"Each person should pay {bill_calculated}")
