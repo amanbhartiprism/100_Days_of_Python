@@ -85,63 +85,63 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Conne
 # ! Gemini code
 import random #! Always import at the very top
 
-#! Day 4 Final Project: Rock Paper Scissors
-# rock = """
-#     _______
-# ---'   ____)
-#       (_____)
-#       (_____)
-#       (____)
-# ---.__(___)
-# """
+# ! Day 4 Final Project: Rock Paper Scissors
+rock = """
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+"""
 
-# paper = """
-#      _______
-# ---'    ____)____
-#            ______)
-#           _______)
-#          _______)
-# ---.__________)
-# """
+paper = """
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+"""
 
-# scissors = """
-#     _______
-# ---'   ____)____
-#           ______)
-#        __________)
-#       (____)
-# ---.__(___)
-# """
+scissors = """
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+"""
 
-# #* Store the ASCII art in a list for easy access via index (here we used the same list for both computer and human and gave them to chose from the same different from above)
-# game_images = [rock, paper, scissors]
+#* Store the ASCII art in a list for easy access via index (here we used the same list for both computer and human and gave them to chose from the same different from above)
+game_images = [rock, paper, scissors]
 
-# print("Welcome to the game of Rock, Paper and Scissors")
+print("Welcome to the game of Rock, Paper and Scissors")
 
-# # 1. Get User Input
-# user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+# 1. Get User Input
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-# # 2. Validation Check (MBA Pro-Tip: Always validate your data!)
-# if user_choice >= 3 or user_choice < 0:
-#     print("You typed an invalid number. You lose!")
-# else:
-#     # 3. Show User's Choice
-#     print(f"You chose:\n{game_images[user_choice]}")
+# 2. Validation Check (MBA Pro-Tip: Always validate your data!)
+if user_choice >= 3 or user_choice < 0:
+    print("You typed an invalid number. You lose!")
+else:
+    # 3. Show User's Choice
+    print(f"You chose:\n{game_images[user_choice]}")
 
-#     # 4. Generate and Show Computer's Choice
-#     computer_choice = random.randint(0, 2)
-#     print(f"Computer chose:\n{game_images[computer_choice]}")
+    # 4. Generate and Show Computer's Choice
+    computer_choice = random.randint(0, 2)
+    print(f"Computer chose:\n{game_images[computer_choice]}")
 
-#     # 5. Determine the Winner (Simplified Logic)
-#     if user_choice == 0 and computer_choice == 2:
-#         print("You win!")
-#     elif computer_choice == 0 and user_choice == 2:
-#         print("You lose")
-#     elif computer_choice > user_choice:
-#         print("You lose")
-#     elif user_choice > computer_choice:
-#         print("You win!")
-#     elif computer_choice == user_choice:
-#         print("It's a draw")
+    # 5. Determine the Winner (Simplified Logic)
+    if user_choice == 0 and computer_choice == 2:
+        print("You win!")
+    elif computer_choice == 0 and user_choice == 2:
+        print("You lose")
+    elif computer_choice > user_choice:
+        print("You lose")
+    elif user_choice > computer_choice:
+        print("You win!")
+    elif computer_choice == user_choice:
+        print("It's a draw")
 
-# print("\nThank you for playing!")
+print("\nThank you for playing!")
