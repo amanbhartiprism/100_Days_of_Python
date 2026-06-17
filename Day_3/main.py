@@ -154,7 +154,7 @@
 # else:
 #     print("Sorry you have to grow taller before you can ride")
 
-# ! PROJECT TREASURE ISLAND  use .lower() while inputing so it even works even thouh user type something else
+# ! PROJECT TREASURE ISLAND  use .lower() while inputing so it even works even though user type something else
 
 # print("Welcome to Treasure Island.\nYour mission is to find the treasure.\nYou're at a cross road. Where do you want to go?")
 
